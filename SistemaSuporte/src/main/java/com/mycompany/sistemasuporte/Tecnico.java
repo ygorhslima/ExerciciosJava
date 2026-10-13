@@ -1,5 +1,5 @@
 package com.mycompany.sistemasuporte;
-public class Tecnico {
+public class Tecnico implements Atendimento {
     private String nome;
     private String especialidade;
 
@@ -28,5 +28,9 @@ public class Tecnico {
         System.out.println("Nome: " + this.nome);
         System.out.println("Especialidade: " + this.especialidade);
     }
-    
+
+    @Override
+    public void realizarAtendimento() {
+        System.out.println("Realizando atendimento");
+    }
 }
